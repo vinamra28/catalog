@@ -18,7 +18,7 @@ spec:
   params:
     - name: args
       type: array
-      description: extra args that needs to be appended
+      description: extra args that needs to be appended in the command
       default: ["--help"]
   steps:
     - name: format-python-code

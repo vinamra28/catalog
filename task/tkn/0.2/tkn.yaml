@@ -40,5 +40,7 @@ spec:
           export KUBECONFIG=$(workspaces.kubeconfig.path)/kubeconfig
         fi
 
+        tkn version
+
         $(params.SCRIPT)
       args: ["$(params.ARGS)"]

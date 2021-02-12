@@ -24,7 +24,7 @@ spec:
       type: string
       default: "aws $@"
     - name: ARGS
-      description: AWS cli arguments to be passed
+      description: AWS cli arguments to be passed to cli
       type: array
       default: ["help"]
   steps:
