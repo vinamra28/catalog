@@ -1,0 +1,79 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  name: s2i-test-pipeline-run
+spec:
+  pipelineSpec:
+    workspaces:
+      - name: shared-workspace
+      - name: maven-settings
+      - name: sslcertdir
+        optional: true
+    tasks:
+      - name: fetch-repository
+        taskRef:
+          name: git-clone
+        workspaces:
+          - name: output
+            workspace: shared-workspace
+        params:
+          - name: url
+            value: https://github.com/spring-projects/spring-petclinic
+          - name: subdirectory
+            value: ""
+          - name: deleteExisting
+            value: "true"
+      - name: maven-build
+        taskRef:
+          name: maven
+        runAfter:
+          - fetch-repository
+        workspaces:
+          - name: maven-settings
+            workspace: maven-settings
+          - name: source
+            workspace: shared-workspace
+        params:
+          - name: GOALS
+            value:
+              - clean
+              - install
+      - name: s2i
+        taskRef:
+          name: s2i
+        runAfter:
+          - maven-build
+        workspaces:
+          - name: source
+            workspace: shared-workspace
+          - name: sslcertdir
+            workspace: sslcertdir
+        params:
+          - name: BUILDER_IMAGE
+            value: registry.access.redhat.com/openjdk/openjdk-11-rhel7
+          - name: TLSVERIFY
+            value: "false"
+          - name: LOGLEVEL
+            value: "10"
+          - name: IMAGE_NAME
+            value: registry:5000/python-example-tekton
+          - name: PATH_CONTEXT
+            value: "./target/"
+  workspaces:
+    - name: shared-workspace
+      volumeClaimTemplate:
+        spec:
+          accessModes:
+            - ReadWriteOnce
+          resources:
+            requests:
+              storage: 100Mi
+    - name: sslcertdir
+      configMap:
+        name: sslcert
+        defaultMode: 420
+        items:
+          - key: ca.crt
+            path: ca.crt
+    - name: maven-settings
+      emptyDir: {}
