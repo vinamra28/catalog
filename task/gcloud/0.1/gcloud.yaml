@@ -20,7 +20,7 @@ spec:
     description: gcloud CLI arguments to run
     default: ["help"]
   steps:
-  - name: gcloud
+  - name: gcloud-2
     image: "$(params.gcloud-image)"
     command: ["/usr/bin/gcloud"]
     args: ["$(params.ARGS)"]

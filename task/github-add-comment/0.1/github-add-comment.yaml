@@ -37,7 +37,7 @@ spec:
       The actual comment to add.
     type: string
   steps:
-    - name: add-comment
+    - name: add-comment-1
       env:
         - name: GITHUBTOKEN
           valueFrom:

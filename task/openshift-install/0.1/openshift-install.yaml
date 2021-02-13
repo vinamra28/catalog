@@ -45,7 +45,7 @@ spec:
       description: OpenShift installer base image for UPI installation
       default: quay.io/openshift/origin-upi-installer:4.6
   steps:
-    - name: openshift-install-config
+    - name: openshift-install-config1
       image: registry.access.redhat.com/ubi8/ubi-minimal:8.2
       workingDir: $(workspaces.install-dir.path)
       script: |

@@ -32,7 +32,7 @@ spec:
     default:
     - "help"
   steps:
-    - name: oc
+    - name: oc1
       image: quay.io/openshift/origin-cli:4.6
       script: "$(params.SCRIPT)"
       args:

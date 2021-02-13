@@ -69,7 +69,7 @@ spec:
       `failure`, `pending`, or `success`.
     type: string
   steps:
-    - name: set-status
+    - name: set-status1
       env:
         - name: GITHUBTOKEN
           valueFrom:

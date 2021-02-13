@@ -12,7 +12,7 @@ metadata:
 
 spec:
   description: >-
-    This task will run pylint on the provided input.
+    This task will run pylint on the provided inputs.
 
   workspaces:
     - name: source

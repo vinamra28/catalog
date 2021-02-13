@@ -33,7 +33,7 @@ spec:
   workspaces:
     - name: source
   steps:
-    - name: upgrade
+    - name: upgrade1
       image: docker.io/lachlanevenson/k8s-helm:$(inputs.params.helm_version)
       workingDir: /workspace/source
       script: |

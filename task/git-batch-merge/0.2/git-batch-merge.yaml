@@ -80,7 +80,7 @@ spec:
     - name: tree
       description: The git tree SHA that was obtained after batching all provided refs onto revision.
   steps:
-    - name: clone
+    - name: clone-1
       image: $(params.gitInitImage)
       script: |
         CHECKOUT_DIR="$(workspaces.output.path)/$(params.subdirectory)"

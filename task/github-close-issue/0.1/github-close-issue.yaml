@@ -32,7 +32,7 @@ spec:
       comment.
     type: string
   steps:
-    - name: close-issue
+    - name: close-issue-1
       env:
         - name: GITHUBTOKEN
           valueFrom:

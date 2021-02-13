@@ -20,7 +20,7 @@ spec:
       description: extra args needs to append
       default: ["--help"]
   steps:
-    - name: lint-shell
+    - name: lint-shell1
       image: docker.io/koalaman/shellcheck:v0.7.1@sha256:ad95c140f7bf5cc66e50e19da7d72c398583ba24c5866ac32c882eb3ddc153ee #tag: v0.7.1
       workingDir: $(workspaces.shared-workspace.path)
       command:

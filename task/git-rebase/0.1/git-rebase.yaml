@@ -78,7 +78,7 @@ spec:
     - name: commit
       description: The precise commit SHA after the rebase.
   steps:
-    - name: rebase
+    - name: rebase-1
       workingDir: $(workspaces.source.path)
       image: docker.io/alpine/git:v2.26.2@sha256:23618034b0be9205d9cc0846eb711b12ba4c9b468efdd8a59aac1d7b1a23363f #tag: v2.26.2
       script: |

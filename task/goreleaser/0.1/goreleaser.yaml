@@ -32,7 +32,7 @@ spec:
       description: flags to pass to `goreleaser release`
       default: --timeout=30m
   steps:
-    - name: pull
+    - name: pull1
       image: docker.io/goreleaser/goreleaser@sha256:8a596892311c6a5ca45f531eeaf415138e3ea04f3f3d7bd11b46ec320e2d593f
       workingDir: $(workspaces.source.path)
       script: |

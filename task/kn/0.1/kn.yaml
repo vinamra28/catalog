@@ -22,7 +22,7 @@ spec:
     default:
     - "help"
   steps:
-  - name: kn
+  - name: kn1
     image: "$(params.kn-image)"
     command: ["/ko-app/kn"]
     args: ["$(params.ARGS)"]

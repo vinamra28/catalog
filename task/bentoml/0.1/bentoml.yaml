@@ -27,7 +27,7 @@ spec:
     description: BentoML CLI arguments to run
     default: ""
   steps:
-  - name: bento
+  - name: bento-step
     image: docker.io/iancoffey/bentoml-python3@sha256:ac99d45853efa4750bd4e5f6bc4ab9a7d7aedce57e7930bbb6ef643f9892915d #tag: latest
     command: ["bentoml"]
     args: ["$(inputs.params.ARGS)"]

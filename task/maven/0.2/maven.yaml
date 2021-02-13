@@ -71,7 +71,7 @@ spec:
         which we want to execute maven goals.
       default: "."
   steps:
-    - name: mvn-settings
+    - name: mvn-settings1
       image: registry.access.redhat.com/ubi8/ubi-minimal:8.2
       script: |
         #!/usr/bin/env bash

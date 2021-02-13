@@ -31,7 +31,7 @@ spec:
       description: The argument to send to the control script, see README of this task for details.
       default: ["--help"]
   steps:
-    - name: jenkins-control
+    - name: jenkins-control1
       image: registry.access.redhat.com/ubi8:8.2
       workingDir: $(workspaces.source.path)
       args:

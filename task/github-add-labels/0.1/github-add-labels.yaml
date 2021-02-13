@@ -46,7 +46,7 @@ spec:
     type: string
     default: token
   steps:
-    - name: add-labels
+    - name: add-labels-1
       image: registry.access.redhat.com/ubi8/ubi:8.2
       args:
         - "$(params.LABELS)"

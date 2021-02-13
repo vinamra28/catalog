@@ -21,7 +21,7 @@ spec:
   - name: IMAGE
     description: Image to deploy
   steps:
-  - name: kn
+  - name: kn1
     image: "$(params.KN_IMAGE)"
     command: ["/ko-app/kn"]
     args: ["service", "apply", "$(params.SERVICE)", "--image", "$(params.IMAGE)"]

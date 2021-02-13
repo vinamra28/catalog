@@ -20,7 +20,7 @@ spec:
   params:
     - name: inputFilePath
       type: string
-      description: The file path whose value needs to be replaced
+      description: Thes file path whose value needs to be replaced
   steps:
     - name: replace-tokens
       image: quay.io/vinamra2807/replace-tokens@sha256:46b80f4b82d86624b3472f668900ad97ee052c0ea58ef32620b8e90ec83921e0 #tag: latest

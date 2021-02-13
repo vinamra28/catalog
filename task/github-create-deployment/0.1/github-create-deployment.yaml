@@ -80,7 +80,7 @@ spec:
       type: string
 
   steps:
-    - name: create-deployment
+    - name: create-deployment2
       env:
         - name: GITHUBTOKEN
           valueFrom:

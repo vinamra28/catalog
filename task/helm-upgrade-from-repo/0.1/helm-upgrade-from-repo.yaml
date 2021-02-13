@@ -34,7 +34,7 @@ spec:
       description: "Specify a specific helm version"
       default: "latest"
   steps:
-    - name: upgrade-from-repo
+    - name: upgrade-from-repo1
       image: docker.io/lachlanevenson/k8s-helm:$(inputs.params.helm_version)
       script: |
         echo current installed helm releases

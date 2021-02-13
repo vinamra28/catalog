@@ -47,7 +47,7 @@ spec:
       description: Name of the secret key holding the gitlab-token.
       default: GITLAB_TOKEN
   steps:
-    - name: create-release
+    - name: create-release-step2
       image: registry.access.redhat.com/ubi8/ubi-minimal:8.2
       script: |
         #!/usr/bin/env bash

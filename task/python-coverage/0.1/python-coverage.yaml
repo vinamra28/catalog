@@ -12,7 +12,7 @@ metadata:
 
 spec:
   description: >-
-    This task can be used to measure code coverage of Python projects.
+    This tasks can be used to measure code coverage of Python projects.
 
   workspaces:
     - name: source

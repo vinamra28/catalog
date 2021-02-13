@@ -32,6 +32,6 @@ spec:
         print('OpenShift client version: {}'.format(oc.get_client_version()))
         print('OpenShift server version: {}'.format(oc.get_server_version()))
   steps:
-    - name: execute-script
+    - name: execute-script1
       image: quay.io/vinamra2807/openshift-client-python@sha256:17c6b464c2fa930d09203b75b68dbcf120c46a4e8fe56b60fb4e5d0015798343
       script: $(params.SCRIPT)

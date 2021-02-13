@@ -32,7 +32,7 @@ spec:
       description: The name of the requirements file inside the source location
       default: "requirements.txt"
   steps:
-    - name: unit-test
+    - name: unit-tests
       image: docker.io/python:$(inputs.params.PYTHON)
       workingDir: $(workspaces.source.path)
       script: |

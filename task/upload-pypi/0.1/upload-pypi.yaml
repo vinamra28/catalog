@@ -26,7 +26,7 @@ spec:
   - name: source
 
   steps:
-  - name: build-package
+  - name: build-package1
     image: quay.io/thoth-station/twine@sha256:643ab12bb05c91db1cec6c042160466a3f258e030f5acff2a39d5b0a00442f4b #tag: latest
     workingDir: $(workspaces.source.path)
     script: |

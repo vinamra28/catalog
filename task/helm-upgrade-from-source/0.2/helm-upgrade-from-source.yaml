@@ -36,7 +36,7 @@ spec:
   workspaces:
     - name: source
   steps:
-    - name: upgrade
+    - name: upgrade1
       image: $(params.helm_image)
       workingDir: /workspace/source
       script: |

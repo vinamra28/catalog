@@ -34,7 +34,7 @@ spec:
   - name: source
     mountPath: /workspace/src/$(params.package)
   steps:
-  - name: lint
+  - name: lint1
     image: docker.io/golangci/golangci-lint:$(params.version)
     workingDir: $(workspaces.source.path)
     script: |

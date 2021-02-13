@@ -31,7 +31,7 @@ spec:
     - name: image
       type: image
   steps:
-  - name: build-and-push
+  - name: build-and-push1
     image: gcr.io/cloud-builders/gradle@sha256:797c9936cf33fc30d82a54437541d7ea7f7825c93e3237a89d254b9bc40b0898
     script: |
       #!/bin/sh

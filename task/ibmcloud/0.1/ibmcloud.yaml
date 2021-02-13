@@ -19,7 +19,7 @@ spec:
     type: array
     description: IBM Cloud CLI arguments to run
   steps:
-  - name: ibmcloud
+  - name: ibmcloud1
     image: "$(params.ibmcloud-image)"
     command: ["ibmcloud"]
     args: ["$(params.ARGS)"]

@@ -33,7 +33,7 @@ spec:
       description: tkn CLI arguments to run
       default: ["--help"]
   steps:
-    - name: tkn
+    - name: tkn1
       image: "$(params.TKN_IMAGE)"
       script: |
         if [ "$(workspaces.kubeconfig.bound)" == "true" ] && [[ -e $(workspaces.kubeconfig.path)/kubeconfig ]]; then

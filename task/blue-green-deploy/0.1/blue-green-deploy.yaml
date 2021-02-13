@@ -28,7 +28,7 @@ spec:
       default: "."
       description: The newer version of the deployment to be deployed in another zone
   steps:
-    - name: change-deployment
+    - name: change-deployment-step
       image: quay.io/openshift/origin-cli:4.6
       workingDir: $(workspaces.manifest-dir.path)
       script: |
