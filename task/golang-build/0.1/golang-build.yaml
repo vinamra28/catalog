@@ -36,7 +36,7 @@ spec:
   workspaces:
   - name: source
   steps:
-  - name: build
+  - name: build1
     image: docker.io/library/golang:$(params.version)
     script: |
       SRC_PATH="$GOPATH/src/$(params.package)"

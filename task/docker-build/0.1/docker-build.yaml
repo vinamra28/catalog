@@ -41,7 +41,7 @@ spec:
   - name: IMAGE_DIGEST
     description: Digest of the image just built.
   steps:
-  - name: docker-build
+  - name: docker-build-2
     image: $(params.builder_image)
     env:
     # Connect to the sidecar over TCP, with TLS.

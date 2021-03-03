@@ -20,7 +20,7 @@ spec:
       description: extra args that needs to be appended
       default: ["--help"]
   steps:
-    - name: lint-python-files
+    - name: lint-python-files1
       image: docker.io/cytopia/mypy:latest-0.2@sha256:12d01d8b3cb146daca62c561734270a1c3df16036bb5b486f3d8c992c48af69b #tag: latest-0.2
       workingDir: $(workspaces.shared-workspace.path)
       command:

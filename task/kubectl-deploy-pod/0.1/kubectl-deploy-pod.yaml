@@ -37,7 +37,7 @@ spec:
     default: index.docker.io/aipipeline/kubeclient:v0.0.2  # it is huge
     description: Kubectl wrapper image
   steps:
-  - name: kubeconfig
+  - name: kubeconfig1
     image: $(params.image)
     args:
       - --action=$(params.action)

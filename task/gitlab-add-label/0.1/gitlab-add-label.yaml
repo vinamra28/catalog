@@ -52,7 +52,7 @@ spec:
     default: token
 
   steps:
-    - name: add-label
+    - name: add-label1
       image: registry.access.redhat.com/ubi8/ubi:8.2
       args:
         - "$(params.LABELS)"

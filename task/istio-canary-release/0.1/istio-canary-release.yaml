@@ -37,7 +37,7 @@ spec:
       type: string
       default: ""
   steps:
-    - name: canary-deploy
+    - name: canary-deploy1
       image: quay.io/openshift/origin-cli:4.6
       workingDir: $(workspaces.istio-manifest-dir.path)
       script: |

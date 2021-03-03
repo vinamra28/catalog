@@ -37,7 +37,7 @@ spec:
     secret:
       secretName: $(params.BUILDKIT_CLIENT_CERTS)
   steps:
-  - name: build-and-push
+  - name: build-and-push-step
     image: $(params.BUILDKIT_CLIENT_IMAGE)
     workingDir: $(workspaces.source.path)
     volumeMounts:

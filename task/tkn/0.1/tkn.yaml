@@ -20,7 +20,7 @@ spec:
     type: array
     description: tkn CLI arguments to run
   steps:
-    - name: tkn
+    - name: tkn1
       image: "$(params.tkn-image)"
       command: ["/usr/local/bin/tkn"]
       args: ["$(params.ARGS)"]

@@ -36,7 +36,7 @@ spec:
   - name: wget-workspace
     description: The folder where we write the wget'ed file to
   steps:
-  - name: wget
+  - name: wget1
     image: "$(params.wget-option)"
     command: [wget]
     args: ["$(params.options[*])", "$(params.url)", "$(params.diroptions[*])", "$(workspaces.wget-workspace.path)/$(params.filename)"]

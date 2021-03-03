@@ -78,7 +78,7 @@ spec:
     - name: url
       description: The precise URL that was fetched by this Task
   steps:
-    - name: clone
+    - name: clone-2
       image: $(params.gitInitImage)
       script: |
         #!/bin/sh

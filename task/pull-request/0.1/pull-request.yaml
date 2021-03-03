@@ -34,7 +34,7 @@ spec:
   workspaces:
   - name: pr
   steps:
-  - name: pullrequest-init
+  - name: pullrequest-inits
     image: gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/pullrequest-init@sha256:69633ecd0e948f6462c61bb9e008b940a05b143ef51c67e6e4093278a23dac53 #tag: v0.20.1
     command: ["/ko-app/pullrequest-init"]
     env:

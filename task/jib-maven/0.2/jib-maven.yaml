@@ -38,7 +38,7 @@ spec:
     description: Digest of the image just built.
 
   steps:
-  - name: build-and-push
+  - name: build-and-push1
     image: $(params.MAVEN_IMAGE)
     # Make sh evaluate $HOME.
     script: |

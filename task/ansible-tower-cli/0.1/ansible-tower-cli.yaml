@@ -37,7 +37,7 @@ spec:
       type: string
       default: "tower-creds"
   steps:
-    - name: config
+    - name: config-ansible-1
       image: quay.io/rcmendes/ansible-tower-cli@sha256:3a61778f410526db8d6e02e87715d58ee770c4a4faf57ac408cb5ec1a025ef2c #tag: latest
       command:
         - '/bin/sh'

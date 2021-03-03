@@ -33,12 +33,14 @@ spec:
       description: tkn CLI arguments to run
       default: ["--help"]
   steps:
-    - name: tkn
+    - name: tkn1
       image: "$(params.TKN_IMAGE)"
       script: |
         if [ "$(workspaces.kubeconfig.bound)" == "true" ] && [[ -e $(workspaces.kubeconfig.path)/kubeconfig ]]; then
           export KUBECONFIG=$(workspaces.kubeconfig.path)/kubeconfig
         fi
+
+        tkn version
 
         $(params.SCRIPT)
       args: ["$(params.ARGS)"]

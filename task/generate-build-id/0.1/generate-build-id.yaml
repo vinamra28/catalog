@@ -24,7 +24,7 @@ spec:
     - name: build-id
       description: ID of the current build
   steps:
-    - name: get-timestamp
+    - name: get-timestamp-2
       image: docker.io/library/bash:5.0.18@sha256:8ef3f8518f47caf1ddcbdf49e983a9a119f9faeb41c2468dd20ff39cd242d69d #tag: 5.0.18
       script: |
         #!/usr/bin/env bash

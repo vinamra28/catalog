@@ -42,7 +42,7 @@ spec:
       default: "10"
 
   steps:
-    - name: get-token
+    - name: get-token-1
       image: quay.io/chmouel/github-app-token@sha256:bc45937ae588df876555ebb56c36350ed74592c7f55f2df255cabef39c926a88
       env:
         - name: GITHUBAPP_KEY_PATH

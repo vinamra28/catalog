@@ -32,7 +32,7 @@ spec:
       type: array
       default: []
   steps:
-    - name: pylint
+    - name: pylints
       image: $(params.image)
       workingDir: $(workspaces.source.path)
       script: |

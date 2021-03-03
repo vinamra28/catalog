@@ -26,7 +26,7 @@ spec:
       type: string
       default: "SilentlyContinue"
   steps:
-    - name: invoke-script
+    - name: invoke-scripts
       image: mcr.microsoft.com/powershell:$(params.tag)
       script: |
         #!/usr/bin/env pwsh

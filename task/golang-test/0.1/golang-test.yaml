@@ -39,7 +39,7 @@ spec:
   workspaces:
   - name: source
   steps:
-  - name: unit-test
+  - name: unit-test1
     image: docker.io/library/golang:$(params.version)
     script: |
       SRC_PATH="$GOPATH/src/$(params.package)/$(params.context)"

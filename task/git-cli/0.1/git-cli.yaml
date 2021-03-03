@@ -52,7 +52,7 @@ spec:
       description: The precise commit SHA after the git operation.
 
   steps:
-    - name: git
+    - name: git-1
       image: $(params.BASE_IMAGE)
       workingDir: $(workspaces.source.path)
       script: |

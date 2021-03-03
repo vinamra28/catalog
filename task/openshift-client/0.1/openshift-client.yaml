@@ -38,7 +38,7 @@ spec:
         type: git
         optional: true
   steps:
-    - name: oc
+    - name: oc1
       image: quay.io/openshift/origin-cli:$(params.VERSION)
       script: "$(params.SCRIPT)"
       args:
