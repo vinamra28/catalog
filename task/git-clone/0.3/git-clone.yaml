@@ -18,7 +18,7 @@ spec:
     your Workspace. You can clone into a subdirectory by setting this Task's
     subdirectory param. This Task also supports sparse checkouts. To perform
     a sparse checkout, pass a list of comma separated directory patterns to
-    this Task's sparseCheckoutDirectories param.
+    this Task's sparseCheckoutDirectories param world.
 
   workspaces:
     - name: output
