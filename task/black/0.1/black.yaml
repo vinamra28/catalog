@@ -10,7 +10,7 @@ metadata:
     tekton.dev/displayName: "Python Black"
 spec:
   description: >-
-    This task can be used to format Python code
+    This task can be used to format Python code using black
   workspaces:
     - name: shared-workspace
       description: >-
