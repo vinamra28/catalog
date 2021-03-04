@@ -20,6 +20,8 @@ spec:
       type: array
       description: extra args that needs to be appended
       default: ["--help"]
+    - name: image
+      default: quay.io/vinamra2807/help:6433
   steps:
     - name: format-python-code
       image: $(params.image) #tag: latest-0.2
