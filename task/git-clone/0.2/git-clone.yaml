@@ -16,7 +16,7 @@ spec:
     The git-clone Task will clone a repo from the provided url into the
     output Workspace. By default the repo will be cloned into the root of
     your Workspace. You can clone into a subdirectory by setting this Task's
-    subdirectory param.
+    subdirectory param world.
 
   workspaces:
     - name: output
