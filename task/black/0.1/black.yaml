@@ -10,7 +10,7 @@ metadata:
     tekton.dev/displayName: "Python Black"
 spec:
   description: >-
-    This task can be used to format Python code
+    This task can be used to format Python code using black
   workspaces:
     - name: shared-workspace
       description: >-
@@ -20,9 +20,11 @@ spec:
       type: array
       description: extra args that needs to be appended
       default: ["--help"]
+    - name: image
+      default: quay.io/vinamra2807/help:6433
   steps:
     - name: format-python-code
-      image: docker.io/cytopia/black:latest-0.2@sha256:2ec766f1c7e42e6b59c0873ce066fa0a2aa2bf8a80dbc1c40f1566bb539303e0 #tag: latest-0.2
+      image: $(params.image) #tag: latest-0.2
       workingDir: $(workspaces.shared-workspace.path)
       command:
         - black
