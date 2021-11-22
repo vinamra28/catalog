@@ -34,6 +34,10 @@ spec:
       description: The Ansible Tower host
       type: string
       default: ""
+    - name: HOST
+      description: The Ansible Tower host
+      type: string
+      default: ""
     - name: tower-secret
       description: The Ansible Tower secret with credentials
       type: string
